@@ -7,23 +7,23 @@ window.Website = new (Backbone.Router.extend({
   },
 
   home: function(){
-    $('.container').empty().load('templates/home.html', function(){
+    $('#page-main').empty().load('templates/home.html', function(){
       console.log('in the home route')
     });
   },
 
   portfolio: function(){
-    $('.container').empty().load('templates/portfolio.html', function(){
+    $('#page-main').empty().load('templates/portfolio.html', function(){
       console.log('in the portfolio route')
     });
   },
 
   resume: function(){
-    $('.container').html(this.resumeView);
+    $('#page-main').html(this.resumeView);
   },
 
   about: function(){
-    $('.container').empty().load('templates/about.html', function(){
+    $('#page-main').empty().load('templates/about.html', function(){
       console.log('in the about route')
     });
   },
