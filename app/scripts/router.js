@@ -19,7 +19,9 @@ window.Website = new (Backbone.Router.extend({
   },
 
   resume: function(){
-    $('#page-main').html(this.resumeView);
+    $('#page-main').empty().load('templates/resume.html', function(){
+      console.log('in the about route')
+    });
   },
 
   about: function(){
