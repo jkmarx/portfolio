@@ -2,17 +2,43 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
 
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
 
-// .browsehappy {
-//     margin: 0.2em 0;
-//     background: #ccc;
-//     color: #000;
-//     padding: 0.2em 0;
-// }
+html, body {
+  padding-top: 20px;
+  height:100%;
+  font-family: Garamond, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+.panel-default{
+  width: 435px;
+  padding: 0px;
+  margin: 0px;
+  border: 2px solid black;
+}
+.panel-default > .panel-heading#wice{
+  background-color: #E7512D;
+  color: white;
+  font-size:1.5em;
+  text-align: center;
+}
 
-/* Space out content a bit */
-body {
-  padding-top: 49px;
-  padding-bottom: 20px;
+.panel-default > .panel-heading#proj{
+  background-color: rgba(155,194,207,0.8);
+  color: white;
+  font-size:1.5em;
+  text-align: center;
+}
+
+
+.panel-default > .panel-body{
+  background-color: black;
+  text-align:center;
+}
+
+.panel-default > .panel-footer{
+  background-color: white;
+  text-align:center;
+  color: black;
+  font-size: 1.2em;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -20,11 +46,6 @@ body {
 .footer {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .navbar {
@@ -38,11 +59,6 @@ body {
 }
 
 /* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
 
 .container-narrow > hr {
   margin: 30px 0;
@@ -58,12 +74,12 @@ body {
 }
 
 .footer{
- // position:absolute;
- // bottom:0;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
   width: 100%;
   background-color: black;
   color: white;
-  padding-left: 0px;
+  padding: 10px 0 1px 0;
   margin-left: 0px;
 }
 
@@ -86,6 +102,7 @@ body {
 #page-main{
   padding: 30px 100px 0 0;
   width: 100%;
+  min-height: 700px;
 }
 
 .port-cols{
@@ -96,6 +113,16 @@ ul li{
   list-style-type: none;
   // margin: 5px;
   // padding: 5px 10px 10px 5px;
+}
+
+li h2 #resume-name{
+  text-align: left;
+  display: inline;
+}
+
+h4{
+  margin-bottom: 2px;
+  padding-bottom: 0px;
 }
 
 /* Responsive: Portrait tablets and up */
