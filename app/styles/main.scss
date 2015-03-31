@@ -3,49 +3,18 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
 
 html, body {
-  padding-top: 20px;
-  height:100%;
-  font-family: Garamond, Helvetica, Arial, sans-serif;
+  padding-top: 10px;
+  height: 100%;
+  width: 100%;
+ // font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
-.panel-default{
-  width: 435px;
-  padding: 0px;
-  margin: 0px;
-  border: 2px solid black;
-}
-.panel-default > .panel-heading#wice{
-  background-color: #E7512D;
-  color: white;
-  font-size:1.5em;
-  text-align: center;
-}
 
-.panel-default > .panel-heading#proj{
-  background-color: rgba(155,194,207,0.8);
-  color: white;
-  font-size:1.5em;
-  text-align: center;
-}
-
-
-.panel-default > .panel-body{
-  background-color: black;
-  text-align:center;
-}
-
-.panel-default > .panel-footer{
-  background-color: white;
-  text-align:center;
-  color: black;
-  font-size: 1.2em;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+#wrap{
+  min-height: 96%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
 }
 
 .navbar {
@@ -58,31 +27,24 @@ html, body {
   color: white;
 }
 
-/* Custom page footer */
-
-.container-narrow > hr {
-  margin: 30px 0;
+.glyphicon {
+  color: #000000;
+  font-size: 1.3em;
 }
 
-.glyphicon {
-  color: black;
-  font-size: 1.3em;
+.footer {
+  color: #777;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  height:60px;
+  padding: 10px 0 1px 0;
+  margin-left: 0px;
 }
 
 .footer .glyphicon{
   color: white;
 }
-
-.footer{
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-  width: 100%;
-  background-color: black;
-  color: white;
-  padding: 10px 0 1px 0;
-  margin-left: 0px;
-}
-
 .footer ul li{
   display: inline;
   list-style-type: none;
@@ -102,14 +64,10 @@ html, body {
 #page-main{
   padding: 30px 100px 0 0;
   width: 100%;
-  min-height: 700px;
-}
-
-.port-cols{
-  margin-right: 20px;
 }
 
 ul li{
+  display: inline;
   list-style-type: none;
   // margin: 5px;
   // padding: 5px 10px 10px 5px;
@@ -119,10 +77,118 @@ li h2 #resume-name{
   text-align: left;
   display: inline;
 }
-
+h3{
+  margin-top: 3px;
+}
 h4{
   margin-bottom: 2px;
   padding-bottom: 0px;
+}
+
+ul.port-link li{
+  display: inline;
+  list-style-type: none;
+  padding-right:50px;
+  text-align:center;
+}
+
+ul.port-link li a{
+ color:white;
+ background-color:rgb(231,81,45);
+ border-radius: 25px;
+ padding: 5px 10px 5px 10px;
+ text-align: center;
+}
+
+ul.port-link#proj2 li a{
+ color:white;
+ background-color:rgba(155,194,207,0.8);
+ border-radius: 25px;
+ padding: 5px 10px 5px 10px;
+ text-align: center;
+}
+
+.panel-default{
+  width: 800px;
+ // width: 100%;
+  padding: 0px;
+  margin: 20px 0 20px 0;
+  border: 2px solid #000000;
+  text-align: center;
+}
+
+.panel-default > .panel-heading{
+  background-color: #000000;
+  color: white;
+}
+
+.panel-default > .panel-heading#wice{
+  background-color: rgb(231,81,45);
+  //border: 3px solid #E7512D;
+  color: white;
+  font-size:1.5em;
+  text-align: center;
+}
+
+.panel-default > .panel-heading#proj{
+  background-color: rgba(155,194,207,0.8);
+  color: white;
+  font-size:1.5em;
+  text-align: center;
+}
+
+.panel-default > .panel-body{
+  background-color: white;
+  //text-align:center;
+}
+
+.panel-default > .panel-footer{
+  background-color: white;
+  text-align:center;
+  color: #000000;
+  font-size: 1.2em;
+}
+
+img.port{
+  display: block;
+  text-align: center;
+  max-width: 100%;
+}
+
+ #home{
+  text-align: center;
+  background-color:#000000;
+  width: 1260px;
+ // height:575px;
+ }
+
+#home img{
+  padding-top: 20px;
+}
+
+#home-text{
+  color: white;
+  width: 1260px;
+ // font-size: 1.2em;
+  background-color: #000000;
+  text-align: center;
+}
+#home-text p{
+  color: white;
+  width: 80%;
+  font-size: 1.2em;
+  text-align: center;
+  padding-top:15px;
+  padding-left:20%;
+}
+
+#wrap-black{
+  background-color: #000000;
+}
+
+ul.resume-list li{
+  display: block;
+  list-style-type: square;
 }
 
 /* Responsive: Portrait tablets and up */
