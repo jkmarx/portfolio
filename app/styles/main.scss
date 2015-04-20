@@ -3,11 +3,27 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
 
 html, body {
-  padding-top: 10px;
+  padding-top: 20px;
   height: 100%;
   width: 100%;
  // font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
+  background-color: #FFFFFF;
+}
+
+div.container-fluid{
+  min-width: 100%;
+  height:auto;
+}
+
+div.row{
+  min-width:100%;
+  min-height:100%;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
 
 #wrap{
@@ -17,13 +33,16 @@ html, body {
   padding: 0 0 60px;
 }
 
+.header{
+  margin-bottom: 30px;
+}
 .navbar {
   height:80px;
 }
 
 #nav-menu a{
   font-size: 1.5em;
-  margin: 15px 15px 0 0;
+  margin: 5px 15px 0 0;
   color: white;
 }
 
@@ -38,176 +57,279 @@ html, body {
   background-color: #000000;
   color: white;
   height:60px;
-  padding: 10px 0 1px 0;
+  padding: 0;
   margin-left: 0px;
 }
 
 .footer .glyphicon{
   color: white;
 }
+
+.footer ul{
+  padding-top: 15px;
+}
 .footer ul li{
   display: inline;
   list-style-type: none;
   margin: 5px;
   padding: 5px 10px 10px 5px;
-  text-align: center;
-}
-
-#resume-contact li{
-  display: inline;
-  list-style-type: none;
-  margin: 5px;
-  padding: 5px 10px 10px 5px;
-  text-align: center;
 }
 
 #page-main{
-  padding: 30px 100px 0 0;
-  width: 100%;
+  min-width: 100%;
+  height: auto;
 }
 
-ul li{
-  display: inline;
-  list-style-type: none;
-  // margin: 5px;
-  // padding: 5px 10px 10px 5px;
-}
-
-li h2 #resume-name{
-  text-align: left;
-  display: inline;
-}
-h3{
-  margin-top: 3px;
-}
-h4{
-  margin-bottom: 2px;
-  padding-bottom: 0px;
-}
-
-ul.port-link li{
-  display: inline;
-  list-style-type: none;
-  padding-right:50px;
-  text-align:center;
-}
-
-ul.port-link li a{
- color:white;
- background-color:rgb(231,81,45);
- border-radius: 25px;
- padding: 5px 10px 5px 10px;
- text-align: center;
-}
-
-ul.port-link#proj2 li a{
- color:white;
- background-color:rgba(155,194,207,0.8);
- border-radius: 25px;
- padding: 5px 10px 5px 10px;
- text-align: center;
-}
-
-.panel-default{
-  width: 800px;
- // width: 100%;
-  padding: 0px;
-  margin: 20px 0 20px 0;
-  border: 2px solid #000000;
-  text-align: center;
-}
-
-.panel-default > .panel-heading{
-  background-color: #000000;
+.navbar-inverse .navbar-brand {
   color: white;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
-.panel-default > .panel-heading#wice{
-  background-color: rgb(231,81,45);
-  //border: 3px solid #E7512D;
+.navbar-inverse .navbar-nav > li{
+  margin-top: 10px;
+  display: inline-block;
+  float: left;
   color: white;
-  font-size:1.5em;
-  text-align: center;
+  font-size: 16px;
+  background-color: #222222;
 }
 
-.panel-default > .panel-heading#proj{
-  background-color: rgba(155,194,207,0.8);
-  color: white;
-  font-size:1.5em;
-  text-align: center;
-}
-
-.panel-default > .panel-body{
-  background-color: white;
-  //text-align:center;
-}
-
-.panel-default > .panel-footer{
-  background-color: white;
-  text-align:center;
-  color: #000000;
-  font-size: 1.2em;
-}
-
-img.port{
-  display: block;
-  text-align: center;
-  max-width: 100%;
-}
-
- #home{
-  text-align: center;
-  background-color:#000000;
-  width: 1260px;
- // height:575px;
+  ul li{
+   display: inline;
+   list-style-type: none;
  }
 
-#home img{
-  padding-top: 20px;
-}
-
-#home-text{
-  color: white;
-  width: 1260px;
- // font-size: 1.2em;
-  background-color: #000000;
-  text-align: center;
-}
-#home-text p{
-  color: white;
-  width: 80%;
-  font-size: 1.2em;
-  text-align: center;
-  padding-top:15px;
-  padding-left:20%;
-}
-
-#wrap-black{
-  background-color: #000000;
-}
-
-ul.resume-list li{
-  display: block;
-  list-style-type: square;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-
-  .container {
-      max-width: 730px;
+  h3{
+    margin-top: 3px;
+  }
+  h4{
+    margin-bottom: 2px;
+    padding-bottom: 0px;
   }
 
-  /* Remove the padding we set earlier */
+  ul.port-link li{
+  //  display: inline;
+  //  list-style-type: none;
+    padding-right:50px;
+    text-align:center;
+  }
+
+  ul.port-link li a{
+   color:white;
+   background-color:rgb(231,81,45);
+   border-radius: 25px;
+   padding: 5px 10px 5px 10px;
+   text-align: center;
+  }
+
+  ul.port-link#proj2 li a{
+   color:white;
+   background-color:rgba(155,194,207,0.8);
+   border-radius: 25px;
+   padding: 5px 10px 5px 10px;
+   text-align: center;
+  }
+
+  ul.port-link#proj3 li a{
+   color:white;
+   background-color:rgba(0,0,128, 1.0);
+   border-radius: 25px;
+   padding: 5px 10px 5px 10px;
+   text-align: center;
+  }
+
+  .panel-default{
+    width: 800px;
+   // width: 100%;
+    padding: 0px;
+    margin: 20px 0 20px 0;
+    border: 2px solid #000000;
+    text-align: center;
+  }
+
+  .panel-default > .panel-heading{
+    background-color: #000000;
+    color: white;
+  }
+
+  .panel-default > .panel-heading#wice{
+    background-color: rgb(231,81,45);
+    //border: 3px solid #E7512D;
+    color: white;
+    font-size:1.5em;
+    text-align: center;
+  }
+
+  .panel-default > .panel-heading#proj{
+    background-color: rgba(155,194,207,0.8);
+    color: white;
+    font-size:1.5em;
+    text-align: center;
+  }
+
+  .panel-default > .panel-heading#tweet{
+    background-color: rgba(0,0,128,1.0);
+    color: white;
+    font-size:1.5em;
+    text-align: center;
+  }
+
+
+
+  .panel-default > .panel-body{
+    background-color: white;
+    //text-align:center;
+  }
+
+  .panel-default > .panel-footer{
+    background-color: white;
+    text-align:center;
+    color: #000000;
+    font-size: 1.2em;
+  }
+
+  img.port{
+    display: block;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  #home{
+    text-align: center;
+    background-color:#000000;
+    min-width:100%;
+    height:100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #home img{
+    padding-top:30px;
+  }
+
+  #home-text{
+    color: white;
+    background-color: #000000;
+    text-align: center;
+  }
+  #home-text p{
+    color: white;
+    width: 80%;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top:15px;
+    padding-left:20%;
+  }
+
+  #home-text ul#lang-icon{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  li h2#resume-name{
+    text-align: left;
+    display: inline;
+  }
+
+  #resume-contact li{
+    margin: 5px;
+    padding: 5px 10px 10px 5px;
+    text-align: center;
+  }
+
+  .resume-list li{
+    display: block;
+    list-style: disc inside none;
+  }
+
+  figure#about{
+    padding-top:30px;
+  }
+
+  .col-md-5#about-text{
+    padding:30px 0 20px 0;
+  }
+
+  .navbar-brand{
+    position: fixed;
+  }
+/* Responsive: Portrait tablets and down */
+@media screen and (max-width: 830px) {
+  html, body {
+  padding-top: 20px;
+  height: 100%;
+  width: 100%;
+ // font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  }
+
+  .container {
+      max-width: 100%;
+      height: auto;
+  }
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+
+  // /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
       padding-left: 0;
       padding-right: 0;
+      margin-right: 0;
   }
-  /* Space out the masthead */
-  .header {
-      margin-bottom: 30px;
+
+  #page-main{
+    min-width: 100%;
+    height: auto;
+  }
+
+  .col-md-12{
+    height: 100%;
+  }
+
+  .panel-default{
+   width: 100%;
+    padding: 0px;
+    margin: 0;
+  }
+
+  #home img{
+  padding-top:60px;
+  }
+
+  #home-text p{
+  color: white;
+  width: 100%;
+  font-size: 1.1em;
+  text-align: center;
+  padding-top:15px;
+  padding-left:1%;
+  }
+
+  #resume-col{
+    padding-left: 5px;
+  }
+
+  figure#about{
+    padding-top:50px;
+    text-align: center;
+  }
+
+  #about-text{
+    padding: 40px 0 30px 5px;
+    text-align: center;
+  }
+
+   ul.port-link li{
+   display:block;
+   width: 100%;
+   padding: 10px 0 0 0;
   }
 
 }
