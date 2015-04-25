@@ -266,6 +266,12 @@ img{
   background-color: #FFFFFF;
   }
 
+  .navbar-brand img{
+    position: fixed;
+    width: 50%;
+    height:auto;
+  }
+
   .container {
       max-width: 100%;
       height: auto;
